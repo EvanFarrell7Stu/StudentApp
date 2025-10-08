@@ -34,8 +34,6 @@ public class StudentApp {
         }
 
 
-
-
 for(Student student : studentsList) {
     System.out.println("Name:" + student.getName() + " Email: " + student.getEmail() + " StudentId: " + student.getStudentId());
 }
