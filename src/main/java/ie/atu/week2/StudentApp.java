@@ -18,7 +18,6 @@ public class StudentApp {
         sc.nextLine();
         while (count < totalStudents)
         {
-
             // 1.Prompt for details
             System.out.println("Please enter students name: ");
             String name = sc.nextLine();
@@ -33,10 +32,13 @@ public class StudentApp {
             studentsList.add(student1);
             count++;
         }
-      /*  student1 = new Student();
+
+
+
+
 for(Student student : studentsList) {
-    System.out.println("Name:" + student1.getName() + " Email: " + student1.getEmail() + " StudentId: " + student1.getStudentId());
-}*/
+    System.out.println("Name:" + student.getName() + " Email: " + student.getEmail() + " StudentId: " + student.getStudentId());
+}
 
 
 
