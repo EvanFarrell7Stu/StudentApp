@@ -29,13 +29,16 @@ public class StudentApp {
             student1 = new Student();
             student1.setName(name);
             student1.setEmail(email);
+          /*  for(Student student : studentsList){
+                email.compareTo(studentsList)};*/
             student1.setStudentId(studentId);
             studentsList.add(student1);
             count++;
+
         }
 
 for(Student student : studentsList) {
-    System.out.println("Name:" + student.getName() + " Email: " + student.getEmail() + " StudentId: " + student.getStudentId());
+    System.out.println("Student list:"+"Name:" + student.getName() + " Email: " + student.getEmail() + " StudentId: " + student.getStudentId());
 }
 
 
