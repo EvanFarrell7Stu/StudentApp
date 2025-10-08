@@ -1,4 +1,4 @@
-package ie.atu;
+package ie.atu.week2;
 
 import ie.atu.week2.Student;
 
@@ -33,13 +33,13 @@ public class StudentApp {
             studentsList.add(student1);
             count++;
         }
-        // 2.Create a default student with no details
-        //Student student1 = new Student();
-        //How do you populate the student
+      /*  student1 = new Student();
+for(Student student : studentsList) {
+    System.out.println("Name:" + student1.getName() + " Email: " + student1.getEmail() + " StudentId: " + student1.getStudentId());
+}*/
 
-        /*for(Student student : studentsLists){
-            System.out.println("Name:" + student.getName() + " Email: " + student.getEmail() +  " StudentId: " + student.getstudentId());
-        }*/
+
+
         //For the second student repeat the three steps
 
         // 3.Populating the first object
