@@ -24,20 +24,32 @@ public class StudentApp {
             String name = sc.nextLine();
             System.out.println("Please enter students email");
             String email = sc.nextLine();
+            for (int i=0;i<studentsList.size();i++) {
+                Student studentEntry = studentsList.get(i);
+                String emailEntry = studentEntry.getEmail();
+                if(emailEntry.compareTo(email.toLowerCase()) == 0) {
+                    System.out.println("Student " + email + " is already taken");
+                    System.out.println("Please enter a different email");
+                    email = sc.nextLine();
+                }
+            }
             System.out.println("Please enter students id");
             String studentId = sc.nextLine();
             student1 = new Student();
             student1.setName(name);
             student1.setEmail(email);
-          /*  for(Student student : studentsList){
-                email.compareTo(studentsList)};*/
+
+
             student1.setStudentId(studentId);
+
             studentsList.add(student1);
             count++;
 
         }
 
-for(Student student : studentsList) {
+
+
+        for(Student student : studentsList) {
     System.out.println("Student list:"+"Name:" + student.getName() + " Email: " + student.getEmail() + " StudentId: " + student.getStudentId());
 }
 

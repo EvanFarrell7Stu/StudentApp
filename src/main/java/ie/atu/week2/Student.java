@@ -1,8 +1,11 @@
 package ie.atu.week2;
 
+
+import static com.sun.tools.javac.util.StringUtils.toLowerCase;
+
 public class Student {
     public String name;
-    public String email;
+    public static String email;
     public String StudentId;
 
     public String getName() {
@@ -14,11 +17,12 @@ public class Student {
     }
 
     public String getEmail() {
+
         return email;
     }
 
     public void setEmail(String email) {
-        this.email = email;
+        this.email = email.toLowerCase();
     }
 
     public String getStudentId() {
