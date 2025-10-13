@@ -4,8 +4,8 @@ package ie.atu.week2;
 import static com.sun.tools.javac.util.StringUtils.toLowerCase;
 
 public class Student {
-    public String name;
-    public static String email;
+    public String name="none";
+    public String email="none";
     public String StudentId;
 
     public String getName() {
@@ -18,7 +18,7 @@ public class Student {
 
     public String getEmail() {
 
-        return email;
+        return email.toLowerCase();
     }
 
     public void setEmail(String email) {
