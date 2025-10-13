@@ -24,22 +24,20 @@ public class StudentApp {
             String name = sc.nextLine();
             System.out.println("Please enter students email");
             String email = sc.nextLine();
-            for (int i=0;i<studentsList.size();i++) {
-                Student studentEntry = studentsList.get(i);
-                String emailEntry = studentEntry.getEmail();
-                if(emailEntry.compareTo(email.toLowerCase()) == 0) {
+            for (int i=0;i<studentsList.size();i++) {//indexes array list
+                Student studentEntry = studentsList.get(i);//gets student from Arraylist
+                String emailEntry = studentEntry.getEmail();//gets email from studentEntry
+                while(emailEntry.compareTo(email.toLowerCase()) == 0) {//compares to new input
                     System.out.println("Student " + email + " is already taken");
                     System.out.println("Please enter a different email");
                     email = sc.nextLine();
                 }
             }
             System.out.println("Please enter students id");
-            String studentId = sc.nextLine();
+           String studentId = sc.nextLine();
             student1 = new Student();
             student1.setName(name);
             student1.setEmail(email);
-
-
             student1.setStudentId(studentId);
 
             studentsList.add(student1);
@@ -48,9 +46,9 @@ public class StudentApp {
         }
 
 
-
+        System.out.println("Student list\n3");
         for(Student student : studentsList) {
-    System.out.println("Student list:"+"Name:" + student.getName() + " Email: " + student.getEmail() + " StudentId: " + student.getStudentId());
+    System.out.println("Name:" + student.getName() + "\tEmail: " + student.getEmail() + "\tStudentId: " + student.getStudentId());
 }
 
 
