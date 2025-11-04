@@ -4,6 +4,8 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
+import static ie.atu.week2.ReadFile.readFile;
+
 public class StudentApp {
     public static void main(String[] args) {
         int count = 0;
@@ -14,6 +16,7 @@ public class StudentApp {
         System.out.println("Please enter the amount of students: ");//get number of entries
         int totalStudents = sc.nextInt();
         sc.nextLine();
+
         while (count < totalStudents) {
 
             // 1.Prompt for details
@@ -50,7 +53,8 @@ public class StudentApp {
         for (Student student : studentsList) {
             System.out.println("Name:" + student.getName() + "\tEmail: " + student.getEmail() + "\tStudentId: " + student.getStudentId());
         }
-
+        System.out.println("Info from file:");
+        readFile();
 
     }
 }
